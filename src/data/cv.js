@@ -43,14 +43,14 @@ export const CV = {
       name: "PhysioLink",
       tag: "Fullstack · 2025",
       desc: "Verktyg där tränare skapar och delar träningsprogram med klienter via en länk. Klienten följer övningar med inbyggd timer och loopade YouTube-videor, utan konto. Vue 3, Laravel 12, Tailwind, Docker.",
-      href: "#",
+      href: "https://physio-link.vercel.app/",
       image: "/images/projects/physiolink.webp",
     },
     {
       name: "dayboard",
       tag: "MCP / Agentic · 2026",
       desc: "MCP-verktyg som kopplar AI till en todo-app. Chatta in dagen, AI:n fyller listan via MCP, Electron-appen visar den live. end_day rensar brädet inför nästa dag.",
-      href: "#",
+      href: "https://github.com/simonbeijer/Dayboard",
       image: "/images/projects/dayboard.webp",
     },
     {
