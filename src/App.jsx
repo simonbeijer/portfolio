@@ -18,7 +18,7 @@ const SECTIONS = [
 
 function SideNav({ active, progress }) {
   return (
-    <nav style={{ position: "fixed", top: "50%", right: "clamp(1rem, 2vw, 2rem)", transform: "translateY(-50%)", zIndex: 50, display: "flex", flexDirection: "column", gap: ".8rem", mixBlendMode: "difference" }} aria-label="Sektioner">
+    <nav className="side-nav" style={{ position: "fixed", top: "50%", right: "clamp(1rem, 2vw, 2rem)", transform: "translateY(-50%)", zIndex: 50, display: "flex", flexDirection: "column", gap: ".8rem", mixBlendMode: "difference" }} aria-label="Sektioner">
       {SECTIONS.map((s) => {
         const isActive = active === s.id;
         return (
@@ -89,7 +89,7 @@ function Tweaks({ open, tweaks, setTweaks }) {
 
   if (!open) return null;
   return (
-    <div style={{
+    <div className="tweaks-panel" style={{
       position: "fixed", right: "clamp(1rem, 2vw, 2rem)", bottom: "clamp(1rem, 2vw, 2rem)",
       zIndex: 100, width: 300,
       background: "var(--bg)", color: "var(--fg)",

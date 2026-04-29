@@ -60,7 +60,7 @@ export default function Projects() {
         </h2>
       </Reveal>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "clamp(1.5rem, 3vw, 3rem)" }}>
+      <div className="projects-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "clamp(1.5rem, 3vw, 3rem)" }}>
         {CV.projects.map((p, i) => (
           <ProjectCard key={i} project={p} delay={i * 80} />
         ))}

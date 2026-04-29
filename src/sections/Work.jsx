@@ -18,6 +18,7 @@ export default function Work() {
         {CV.work.map((w, i) => (
           <Reveal key={i} delay={i * 60}>
             <div
+              className="work-row"
               data-hoverable
               onMouseEnter={() => setHovered(i)}
               style={{
@@ -41,7 +42,7 @@ export default function Work() {
                 <div style={{ fontSize: 14, color: "var(--fg-3)", marginTop: ".3rem" }}>{w.role} · {w.city}</div>
               </div>
               <div style={{ fontSize: 14, color: "var(--fg-2)", lineHeight: 1.5, maxWidth: 420, textWrap: "pretty" }}>{w.blurb}</div>
-              <div style={{ fontFamily: "var(--mono)", fontSize: 18, color: "var(--accent)", transform: hovered === i ? "translateX(6px)" : "translateX(0)", transition: "transform .5s cubic-bezier(.2,.7,.2,1)" }}>→</div>
+              <div className="work-arrow" style={{ fontFamily: "var(--mono)", fontSize: 18, color: "var(--accent)", transform: hovered === i ? "translateX(6px)" : "translateX(0)", transition: "transform .5s cubic-bezier(.2,.7,.2,1)" }}>→</div>
             </div>
           </Reveal>
         ))}

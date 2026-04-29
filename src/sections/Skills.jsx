@@ -43,7 +43,7 @@ export default function Skills() {
         })}
       </div>
 
-      <div style={{ padding: "5rem clamp(1.5rem, 5vw, 5rem) 0", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(2rem, 5vw, 5rem)" }}>
+      <div className="skills-bottom-grid" style={{ padding: "5rem clamp(1.5rem, 5vw, 5rem) 0", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(2rem, 5vw, 5rem)" }}>
         <div>
           <Reveal>
             <div style={{ fontFamily: "var(--mono)", fontSize: 11, letterSpacing: ".1em", textTransform: "uppercase", color: "var(--fg-3)", marginBottom: "1.5rem" }}>— Utbildning</div>

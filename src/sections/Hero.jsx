@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section id="intro" data-section="Intro" style={{ minHeight: "100vh", padding: "clamp(3rem, 8vw, 8rem) clamp(1.5rem, 5vw, 5rem) 5rem", display: "flex", flexDirection: "column", justifyContent: "space-between", position: "relative" }}>
       <Reveal>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", fontFamily: "var(--mono)", fontSize: 12, letterSpacing: ".08em", textTransform: "uppercase", color: "var(--fg-3)" }}>
+        <div className="hero-meta" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", fontFamily: "var(--mono)", fontSize: 12, letterSpacing: ".08em", textTransform: "uppercase", color: "var(--fg-3)" }}>
           <div>Digitalt CV · 2026</div>
           <div>{CV.location} · {t}</div>
         </div>
