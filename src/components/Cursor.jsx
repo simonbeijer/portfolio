@@ -3,8 +3,14 @@ import { useEffect, useRef, useState } from "react";
 export default function Cursor() {
   const wrap = useRef(null);
   const [hover, setHover] = useState(false);
+  const [enabled] = useState(() =>
+    typeof window !== "undefined" &&
+    !matchMedia("(pointer: coarse)").matches &&
+    !matchMedia("(prefers-reduced-motion: reduce)").matches
+  );
 
   useEffect(() => {
+    if (!enabled) return;
     let x = 0, y = 0;
     const particles = [];
     const maxParticles = 60;
@@ -69,9 +75,9 @@ export default function Cursor() {
       document.removeEventListener("mouseout", out);
       document.documentElement.style.cursor = "";
     };
-  }, [hover]);
+  }, [hover, enabled]);
 
-  if (typeof window !== "undefined" && matchMedia("(pointer: coarse)").matches) return null;
+  if (!enabled) return null;
 
   return <div ref={wrap} style={{ position: "fixed", inset: 0, pointerEvents: "none", zIndex: 9999 }} />;
 }
