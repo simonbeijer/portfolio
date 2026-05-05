@@ -40,10 +40,17 @@ export const CV = {
 
   projects: [
     {
+      name: "Skooli",
+      tag: "RAG · 2025",
+      desc: "AI-verktyg för lärare. Genererar tematiska lektionsplaner via RAG över kurerat källmaterial och låter läraren förfina planen genom LLM-konversation. Next.js, Tailwind, OpenAI.",
+      href: "https://skooli-lilac.vercel.app/",
+      image: "/images/projects/skooli.webp",
+    },
+    {
       name: "PhysioLink",
       tag: "Fullstack · 2025",
       desc: "Verktyg där tränare skapar och delar träningsprogram med klienter via en länk. Klienten följer övningar med inbyggd timer och loopade YouTube-videor, utan konto. Vue 3, Laravel 12, Tailwind, Docker.",
-      href: "https://physio-link.vercel.app/",
+      href: "https://physio-link.vercel.app/share/demo",
       image: "/images/projects/physiolink.webp",
     },
     {
@@ -53,13 +60,7 @@ export const CV = {
       href: "https://github.com/simonbeijer/Dayboard",
       image: "/images/projects/dayboard.webp",
     },
-    {
-      name: "Skooli",
-      tag: "RAG · 2025",
-      desc: "AI-verktyg för lärare. Genererar tematiska lektionsplaner via RAG över kurerat källmaterial och låter läraren förfina planen genom LLM-konversation. Next.js, Tailwind, OpenAI.",
-      href: "https://skooli-lilac.vercel.app/",
-      image: "/images/projects/skooli.webp",
-    },
+
     {
       name: "Mat Mind",
       tag: "LLM / Persona · 2025",
