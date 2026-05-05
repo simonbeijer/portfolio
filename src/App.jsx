@@ -6,6 +6,7 @@ import Work from "./sections/Work.jsx";
 import Projects from "./sections/Projects.jsx";
 import Skills from "./sections/Skills.jsx";
 import Contact from "./sections/Contact.jsx";
+import { Analytics } from "@vercel/analytics/next"
 
 const SECTIONS = [
   { id: "intro",   label: "Intro",      n: "00" },
@@ -190,6 +191,7 @@ export default function App() {
 
   return (
     <>
+      <Analytics />
       <Curtain />
       <Cursor />
       <SideNav active={active} progress={progress} />
