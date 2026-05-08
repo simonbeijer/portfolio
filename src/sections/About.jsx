@@ -7,7 +7,7 @@ export default function About() {
       <SectionLabel n="01" label="Om" />
       <div style={{ display: "grid", gridTemplateColumns: "1.4fr", gap: "clamp(2rem, 6vw, 6rem)", marginTop: "3rem", maxWidth: 1100 }}>
         <div>
-          <h2 style={{ fontFamily: "var(--display)", fontWeight: 400, fontSize: "clamp(2rem, 4.5vw, 4rem)", lineHeight: 1.05, letterSpacing: "-0.015em", marginBottom: "2rem", textWrap: "balance" }}>
+          <h2 className="about-heading" style={{ fontFamily: "var(--display)", fontWeight: 400, fontSize: "clamp(2rem, 4.5vw, 4rem)", lineHeight: 1.05, letterSpacing: "-0.015em", marginBottom: "2rem", textWrap: "balance" }}>
             <Reveal>
               En utvecklare som tycker om <em style={{ color: "var(--accent)" }}>hela stacken</em> — från databas till <em>detaljen som gör att något känns rätt</em>.
             </Reveal>
@@ -17,7 +17,7 @@ export default function About() {
             <p style={{ marginTop: "1rem" }}>Utanför kod: jiu jitsu, musikproduktion och gaming.</p>
           </Reveal>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "2rem", borderTop: "1px solid var(--line)", paddingTop: "2rem", maxWidth: 800 }}>
+          <div className="about-stats" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "2rem", borderTop: "1px solid var(--line)", paddingTop: "2rem", maxWidth: 800 }}>
             {[
               { n: "4", l: "år som utvecklare" },
               { n: "GBG", l: "— Sverige" },
