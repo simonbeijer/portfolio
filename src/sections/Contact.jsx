@@ -37,7 +37,7 @@ export default function Contact() {
 
       <div style={{ marginTop: "5rem", display: "flex", justifyContent: "space-between", alignItems: "center", fontFamily: "var(--mono)", fontSize: 11, letterSpacing: ".08em", textTransform: "uppercase", color: "var(--fg-3)", flexWrap: "wrap", gap: "1rem" }}>
           <span>© {new Date().getFullYear()} {CV.name}</span>
-          <span>Senast uppdaterad apr 2026</span>
+          <span>Senast uppdaterad maj 2026</span>
         </div>
     </section>
   );
