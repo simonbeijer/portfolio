@@ -56,7 +56,7 @@ export default function Cursor() {
       const parts = [];
       parts.push(`<div style="position:fixed;left:${x - 3}px;top:${y - 3}px;width:6px;height:6px;background:var(--accent);image-rendering:pixelated;pointer-events:none;"></div>`);
       if (hover) {
-        parts.push(`<div style="position:fixed;left:${x - 7}px;top:${y - 7}px;width:14px;height:14px;border:2px solid var(--accent);box-sizing:border-box;pointer-events:none;"></div>`);
+        parts.push(`<div style="position:fixed;left:${x - 3}px;top:${y - 3}px;width:6px;height:6px;background:var(--accent-3);image-rendering:pixelated;pointer-events:none;"></div>`);
       }
       for (let p of particles) {
         const col = p.hue < 0.55 ? "var(--accent)" : p.hue < 0.8 ? "var(--accent-3, #F5C742)" : "var(--accent-2, #E85B3B)";
