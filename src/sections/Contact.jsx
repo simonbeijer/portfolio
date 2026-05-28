@@ -21,15 +21,28 @@ export default function Contact() {
 
       <div style={{ marginTop: "clamp(4rem, 10vw, 8rem)", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "2rem", paddingTop: "3rem", borderTop: "1px solid var(--line)" }}>
         {[
-          { label: "Email", value: CV.email },
-          { label: "GitHub", value: "simonbeijer" },
+          { label: "Email", value: CV.email , href: `mailto:${CV.email}`},
+          { label: "GitHub", value: "simonbeijer", href: "https://github.com/simonbeijer"},
           { label: "Baserad", value: CV.location },
           { label: "Status", value: "Öppen för uppdrag" },
         ].map((x, i) => (
           <Reveal key={i} delay={i * 80}>
             <div>
               <div style={{ fontFamily: "var(--mono)", fontSize: 11, letterSpacing: ".1em", textTransform: "uppercase", color: "var(--fg-3)", marginBottom: ".5rem" }}>{x.label}</div>
-              <div style={{ fontFamily: "var(--display)", fontSize: "1.3rem" }}>{x.value}</div>
+              <div style={{ fontFamily: "var(--display)", fontSize: "1.3rem" }}>
+                {x.href ? (
+                  <MagneticLink
+                    href={x.href}
+                    data-hoverable
+                    strength={10}
+                    target={x.href.startsWith("http") ? "_blank" : undefined}
+                    rel={x.href.startsWith("http") ? "noreferrer noopener" : undefined}
+                    style={{}}
+                  >
+                    {x.value}
+                  </MagneticLink>
+                ) : x.value}
+              </div>
             </div>
           </Reveal>
         ))}
