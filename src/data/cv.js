@@ -40,6 +40,21 @@ export const CV = {
 
   projects: [
     {
+      name: "MIDI-MCP",
+      tag: "MCP-server · 2026",
+      desc: "MCP-vertyg som låter en AI generera MIDI från text, basgångar, ackord, trummor och melodier. Filerna dras rakt in i valfri DAW. Kan även analysera redan skapade MIDI-filer. Stack: Python, FastMCP",
+      href: "https://github.com/simonbeijer/midi-mcp",
+      image: "/images/projects/MIDI-MCP.webp"
+    },
+    {
+      name: "Fast-Track",
+      tag: "Desktop App · 2026",
+      desc: "Native macOS-utility för snabba AI-svar via en popup (⇧⌘Space). Ingen webbläsare, ingen Dock-ikon, bara ett globalt snabbkommando. Pluggbar modell, lokal LLM och MCP-sök är nästa steg. Stack: Tauri 2 (Rust), SvelteKit, TypeScript, macOS Keychain.",
+      href: "https://github.com/simonbeijer/fast-track",
+      image: "/images/projects/Fast-Track.webp"
+    },
+
+    {
       name: "Skooli",
       tag: "RAG · 2025",
       desc: "AI-verktyg för lärare. Genererar tematiska lektionsplaner via RAG över kurerat källmaterial och låter läraren förfina planen genom LLM-konversation. Next.js, Tailwind, OpenAI.",
