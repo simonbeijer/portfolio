@@ -93,6 +93,7 @@ export const CV = {
   },
 
   education: [
+    { year: "2026", school: "IT-Högskolan", program: "Molnutveckling med AWS, 30 YH-poäng" },
     { year: "2025 — 2026", school: "Medieinstitutet Göteborg", program: "AI & Machine Learning, YH" },
     { year: "2019 — 2021", school: "Medieinstitutet Göteborg", program: "Front-End Development, YH" },
     { year: "2018 — 2019", school: "Blekinge Institute of Technology", program: "Webbprogrammering, 30 hp" },
